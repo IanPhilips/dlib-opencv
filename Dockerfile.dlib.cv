@@ -77,3 +77,12 @@ RUN cd ~ && \
     cmake --build . --config Release && \
     cp dlib.so /usr/local/lib/python2.7/dist-packages && \
     rm -rf ~/dlib-tmp
+    
+#Unocmment below lines if you're the grim reaper and you're trying to use this dockerfile instead of the one supplied by the face recognition project
+#COPY . /root/face_recognition
+#RUN cd /root/face_recognition && \
+#    pip3 install -r requirements.txt && \
+#    python3 setup.py install
+
+#CMD cd /root/face_recognition/examples && \
+#    python3 recognize_faces_in_pictures.py
