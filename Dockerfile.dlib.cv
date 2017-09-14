@@ -1,6 +1,4 @@
-# Note from Brandon on 2015-01-13:
-#
-#
+#Note:
 #   If I build this on my Arch Linux desktop it works fine locally,
 #   but dlib gives an `Illegal Instruction (core dumped)` error in
 #   dlib.get_frontal_face_detector() when running on OSX in a Docker machine.
